@@ -6,7 +6,7 @@ Just eating some data.
 
 This is a python script that will automate an entire development environment for the airbnb project "Caravel". It automates the installation of several important things in a deployment:
 
-  1. Vagrant VM Provisioning of an Ubuntu 14.04 box
+  1. Vagrant VM Provisioning of an Ubuntu 14.04 box using Atlas
   2. VirtualBox 
   3. Ansible Tower - in the box
   4. apache2 - in the box
