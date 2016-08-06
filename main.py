@@ -10,12 +10,12 @@ if not os.path.exists("Vagrant"):
 	os.makedirs("Vagrant")
 os.chdir("Vagrant")
 
-  # Download Ubunut box from Vagrant site
+  # Download Ubuntu box from Vagrant site
 print("Downloading Ubuntu for the VM...\n")
 p = Popen("vagrant box add ubuntu/trusty64", stdout=PIPE, stdin=PIPE, stderr=STDOUT, shell=True)
 print("\nUbuntu 14.04 LTS (Trusty Tahr) downloaded...\n")
 
-  # Select virtual box by sending binary encoded TTY stdin
+  # Select "2.) virtual box" by sending binary encoded TTY stdin
 stdout = p.communicate(input=b'2')[0]
 print("\nSetting up VirtualBox components...\n")
 print(stdout.decode())
