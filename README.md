@@ -10,7 +10,7 @@ This is a python script that will automate an entire development environment for
   2. VirtualBox 
   3. Ansible Tower - in the box
   4. apache2 - in the box
-  5. PHP & database config - in the box
+  5. requirements & database config - in the box
   6. Caravel - in the box
   7. Import the complex dataset - in the box
 
