@@ -3,7 +3,10 @@ import os
 from subprocess import Popen, PIPE, STDOUT, call
 
 print("\nHey there! Sit tight, this isn't going to hurt one bit.\n")
-  
+
+  # Install our beloved Vagrant VM manager/provision  
+call("sudo apt-get install vagrant", shell=True)
+
   # Create folder & cd
 print("Setting up Vagrant environment...\n")
 if not os.path.exists("Vagrant"):
