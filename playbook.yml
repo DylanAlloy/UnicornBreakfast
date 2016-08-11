@@ -1,17 +1,18 @@
 ---
 - hosts: all
   sudo: yes
-  pre_tasks:
-      ignore_errors: True
   tasks:
-    - name: update apt cache
-      apt: update_cache=yes
-    - name: installing caravel
-      command: sudo apt-get install build-essential libssl-dev libffi-dev python-dev python-pip
-      command: sudo pip install caravel
-      command: fabmanager create-admin --app caravel
-      command: caravel db upgrade
-      command: caravel init
-      command: caravel runserver -p 8088
-    - name: Download Zika DB from the repo
-      command: wget https://github.com/DylanAlloy/UnicornBreakfast/blob/master/zika.db
+    - apt: upgrade=dist
+    - apt: update_cache=yes
+    - apt: name=build-essential state=present
+    - apt: name=libssl-dev state=present
+    - apt: name=libffi-dev state=present
+    - apt: name=python-dev state=present
+    - apt: name=python-pip state=present
+    - command: pip install caravel
+    - command: fabmanager create-admin --app caravel
+    - command: caravel db upgrade
+    - command: caravel init
+    - command: caravel runserver -p 8088
+    - copy: src=../zika.db dest=zika.db
+      failed_when: false
