@@ -33,9 +33,22 @@ This is a python script that will automate an entire development environment for
 
   `cd UnicornBreakfast-master`
 
-  `python main.py`
+  `sudo python main.py`
 
-It will likely prompt for your password (sudo) if you have not entered it recently.
+Once the box is up and running and you're ssh'd into it, it's time to install Caravel. This wouldn't be handled by Ansible (maybe someone can find a way?) due to the pip implementation stalling out. Other people have reported the issue but there was a generic reponse from the Ansible team (though they have an overwhelming amount of requests).
+
+`sudo pip install caravel`
+
+`fabmanager create-admin --app caravel`
+    Keep these credentials in mind, you'll need them to log into Caravel.
+
+`caravel db upgrade`
+
+`caravel init`
+
+`caravel runserver`
+
+At which point we can explore our Caravel interface at `localhost:1234` or `127.0.0.1:1234`
 
 # Requirements
 
