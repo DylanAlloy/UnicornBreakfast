@@ -1,0 +1,25 @@
+---
+- hosts: all
+  sudo: yes
+  pre_tasks:
+      ignore_errors: True
+  tasks:
+    - name: update apt cache
+      apt: update_cache=yes
+    - name: install apache
+      apt: name=apache2 state=present
+    - name: install mysql
+      apt: name=mysql-server state=present
+      apt: name=mysqlclient state=present
+    - name: install php
+      apt: name=php5 state=present
+    - name: installing caravel
+      command: sudo apt-get install build-essential libssl-dev libffi-dev python-dev python-pip
+      command: sudo pip install caravel
+      command: fabmanager create-admin --app caravel
+      command: caravel db upgrade
+      command: caravel init
+      command: caravel runserver -p 8088
+    - name: grab complex dataset from IBM Zika project to import into Caravel
+      command: wget https://github.com/DylanAlloy/UnicornBreakfast/blob/master/zika.db
+
