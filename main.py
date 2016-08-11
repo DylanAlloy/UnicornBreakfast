@@ -47,6 +47,5 @@ f.close()
 
 # Copy Ansible playbook to the working directory and "vagrant up"
 call("sudo cp ../playbook.yml .", shell=True)
-call("sudo cp ../zika.db ~/Desktop/", shell=True)
 call("vagrant up", shell=True)
 call("vagrant ssh", shell=True)
