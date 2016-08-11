@@ -29,7 +29,7 @@ This is a python script that will automate an entire development environment for
 
 # How
   
-  (Download+unzip) or clone this repository.
+  (Download+unzip) or clone this repository to the Ubuntu Desktop.
 
   `cd UnicornBreakfast-master`
 
@@ -40,7 +40,7 @@ Once the box is up and running and you're ssh'd into it, it's time to install Ca
 `sudo pip install caravel`
 
 `fabmanager create-admin --app caravel`
-    Keep these credentials in mind, you'll need them to log into Caravel.
+   - Keep these credentials in mind, you'll need them to log into Caravel.
 
 `caravel db upgrade`
 
@@ -49,6 +49,8 @@ Once the box is up and running and you're ssh'd into it, it's time to install Ca
 `caravel runserver`
 
 At which point we can explore our Caravel interface at `localhost:1234` or `127.0.0.1:1234`
+
+
 
 # Requirements
 
