@@ -18,9 +18,13 @@ This is a python script that will automate an entire development environment for
     a. port forward to :8088
   2. VirtualBox 
   3. Ansible
+  
     a. install Caravel - in the box
+
     b. prompt user for new admin credentials - in the box
+    
     c. run Caravel server - in the box
+    
   4. Requirements & database download - in the box
 
 # How
