@@ -9,7 +9,7 @@
     - apt: name=libffi-dev state=present
     - apt: name=python-dev state=present
     - apt: name=python-pip state=present
-    - command: pip install caravel
+    - pip: name=caravel
     - command: fabmanager create-admin --app caravel
     - command: caravel db upgrade
     - command: caravel init
