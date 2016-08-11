@@ -41,7 +41,7 @@ It will likely prompt for your password (sudo) if you have not entered it recent
 
 # Requirements
 
-  This was tested on Ubuntu 14.04 after manually:
+  This was tested on Ubuntu after upgrading the system with recent packages:
   
   `sudo apt-get update && sudo apt-get install upgrade`
   
