@@ -9,5 +9,5 @@
     - apt: name=libffi-dev state=present
     - apt: name=python-dev state=present
     - apt: name=python-pip state=present
-    - copy: src=~/Desktop/UnicornBreakfast-master/zika.db dest=zika.db
+    - copy: src=~/Desktop/zika.db dest=zika.db
       failed_when: false
