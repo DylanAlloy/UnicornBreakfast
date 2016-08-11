@@ -15,7 +15,9 @@ What I picked out was the Zika epidemic dataset from IBM's Open Zika project. Th
 This is a python script that will automate an entire development environment for the airbnb project "Caravel". It automates the installation of several important things in a deployment:
 
   1. Vagrant VM Provisioning of an Ubuntu 14.04 box using Atlas
+  
     a. port forward to :8088
+
   2. VirtualBox 
   3. Ansible
   
