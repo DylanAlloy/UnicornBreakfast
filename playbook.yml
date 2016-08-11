@@ -9,6 +9,5 @@
     - apt: name=libffi-dev state=present
     - apt: name=python-dev state=present
     - apt: name=python-pip state=present
-    - pip: name=caravel
     - copy: src=~/Desktop/UnicornBreakfast-master/zika.db dest=zika.db
       failed_when: false
