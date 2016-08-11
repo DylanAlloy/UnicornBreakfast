@@ -10,9 +10,5 @@
     - apt: name=python-dev state=present
     - apt: name=python-pip state=present
     - pip: name=caravel
-    - command: fabmanager create-admin --app caravel
-    - command: caravel db upgrade
-    - command: caravel init
-    - command: caravel runserver -p 8088
     - copy: src=~/Desktop/UnicornBreakfast-master/zika.db dest=zika.db
       failed_when: false
