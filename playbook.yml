@@ -14,5 +14,5 @@
     - command: caravel db upgrade
     - command: caravel init
     - command: caravel runserver -p 8088
-    - copy: src=~/Desktop/UnicornBreakfast/zika.db dest=zika.db
+    - copy: src=~/Desktop/UnicornBreakfast-master/zika.db dest=zika.db
       failed_when: false
