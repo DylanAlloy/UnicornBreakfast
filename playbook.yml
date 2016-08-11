@@ -13,3 +13,5 @@
       command: caravel db upgrade
       command: caravel init
       command: caravel runserver -p 8088
+    - name: Download Zika DB from the repo
+      command: wget https://github.com/DylanAlloy/UnicornBreakfast/blob/master/zika.db
