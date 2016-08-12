@@ -46,7 +46,7 @@ Once the box is up and running and you're ssh'd into it, it's time to install Ca
 
 `caravel init`
 
-`caravel runserver`
+`sudo caravel runserver`
 
 At which point we can explore our Caravel interface at `localhost:1234` or `127.0.0.1:1234`
 
