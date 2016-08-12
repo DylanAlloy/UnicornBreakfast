@@ -14,17 +14,15 @@ This is a python script that will automate an entire development environment for
 
   1. Vagrant VM Provisioning of an Ubuntu 14.04 box using Atlas
   
-    a. port forward to :8088
+    a. port forward to :1234
 
   2. VirtualBox 
   3. Ansible
-  
-    a. install Caravel - in the box
 
-    b. prompt user for new admin credentials - in the box
-    
-    c. run Caravel server - in the box
-    
+     a. Caravel prerequisites
+     
+     b. Copy dataset
+
   4. Requirements & database download - in the box
 
 # How
