@@ -5,7 +5,8 @@ from subprocess import Popen, PIPE, STDOUT, call
 print("\nHey there! Sit tight, this isn't going to hurt one bit.\n")
 print("Setting up Vagrant environment...\n")
 
-# Create Vagrant folder for our box & related	
+# Create Vagrant folder for our box & related
+call("sudo apt-get install vagrant", shell=True)
 if not os.path.exists("Vagrant"):
 	os.makedirs("Vagrant")
 	
