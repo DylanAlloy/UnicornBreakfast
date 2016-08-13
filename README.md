@@ -69,9 +69,6 @@ Some steps in that .gif in the event that it doesn't load for you:
   `sudo apt-get install linux-headers-$(uname -r)`
   
   `sudo apt-get install build-essential`
-
-  Vagrant must be installed.
-  
   
   <b>at least 4GB of RAM total + at least a 4-core CPU or 2 w/ hyperthreading. We're working with a somewhat large db and you'll want a quick interface.</b>
   
