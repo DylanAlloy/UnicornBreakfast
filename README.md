@@ -48,7 +48,8 @@ Once the box is up and running and you're ssh'd into it, it's time to install Ca
 
 At which point we can explore our Caravel interface at `localhost:1234` or `127.0.0.1:1234`
 
-<iframe src='https://gfycat.com/ifr/VagueCrispCrustacean' frameborder='0' scrolling='no' width='640' height='360' allowfullscreen></iframe>
+<center><img src="http://thisiswhereidostuff.com/caravel.gif"></center>
+
 # Requirements
 
   This was tested on Ubuntu after upgrading the system with recent packages:
