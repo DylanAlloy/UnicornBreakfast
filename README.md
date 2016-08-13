@@ -1,5 +1,3 @@
-<img src="https://media.giphy.com/media/l3fQe8ahU9XcWpHnG/giphy.gif" width="100%">
-
 # Why
 
 So I wanted a way to visualize good data. Caravel is a project by Airbnb that allows for easy connections of databases to visualize data very quickly. Caravel is far from perfect(I'll explain more later), but it's open source. 
@@ -71,6 +69,9 @@ Some steps in that .gif in the event that it doesn't load for you:
   `sudo apt-get install linux-headers-$(uname -r)`
   
   `sudo apt-get install build-essential`
+  
+  
+  <b>at least 4GB of RAM total + at least a 4-core CPU or 2 w/ hyperthreading. We're working somewhat large data and you'll want a quick interface.</b>
   
 # Details & Afterthought
 
