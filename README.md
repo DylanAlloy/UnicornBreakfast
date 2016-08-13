@@ -48,7 +48,7 @@ Once the box is up and running and you're ssh'd into it, it's time to install Ca
 
 At which point we can explore our Caravel interface at `localhost:1234` or `127.0.0.1:1234`
 
-<center><img src="http://thisiswhereidostuff.com/caravel.gif"></center>
+<center><img src="http://thisiswhereidostuff.com/caravel.gif" width="100%"></center>
 
 # Requirements
 
