@@ -23,8 +23,6 @@ This is a python script that will automate an entire development environment for
      
      b. Copy dataset
 
-  4. Requirements & database download - in the box
-
 # How
   
   (Download+unzip) or clone this repository.
