@@ -27,9 +27,7 @@ call("sudo apt-get install virtualbox", shell=True)
 call("sudo apt-get install software-properties-common", shell=True)
 
 # Install Ansible after loading relevant repos
-p = Popen("sudo apt-add-repository ppa:ansible/ansible", stdout=PIPE, stdin=PIPE, stderr=STDOUT, shell=True)
-stdout = p.communicate(input=b'y')[0]
-print(stdout.decode('utf-8'))
+call("sudo apt-add-repository ppa:ansible/ansible", shell=True)
 call("sudo apt-get update", shell=True)
 call("sudo apt-get install ansible", shell=True)
 
