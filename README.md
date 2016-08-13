@@ -1,3 +1,5 @@
+<img src="https://j.gifs.com/kRn4Bx.gif" width="100%">
+
 # Why
 
 So I wanted a way to visualize good data. Caravel is a project by Airbnb that allows for easy connections of databases to visualize data very quickly. Caravel is far from perfect(I'll explain more later), but it's open source. 
