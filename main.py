@@ -31,7 +31,7 @@ call("sudo apt-get install -y virtualbox --force-yes", shell=True)
 call("sudo apt-get install -y software-properties-common --force-yes", shell=True)
 
 # Install Ansible after loading relevant repos
-call("sudo apt-add-repository -y ppa:ansible/ansible --force-yes", shell=True)
+call("sudo apt-add-repository -y ppa:ansible/ansible", shell=True)
 call("sudo apt-get update -y --force-yes", shell=True)
 call("sudo apt-get install -y ansible --force-yes", shell=True)
 
