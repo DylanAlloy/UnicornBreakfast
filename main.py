@@ -8,6 +8,7 @@ print("Setting up Vagrant environment...\n")
 # Install & create Vagrant folder for our box & related
 call("wget https://releases.hashicorp.com/vagrant/1.8.5/vagrant_1.8.5_x86_64.deb", shell=True)
 call("sudo dpkg -i vagrant_1.8.5_x86_64.deb", shell=True)
+call("sudo rm vagrant_1.8.5_x86_64.deb", shell=True)
 
 if not os.path.exists("Vagrant"):
 	os.makedirs("Vagrant")
