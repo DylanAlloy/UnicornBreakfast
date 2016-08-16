@@ -58,5 +58,5 @@ def install:
 	call("vagrant ssh", shell=True)
 	
 def caravel:
-	call("sudo easy_install pip", shell=True)
+	call("sudo apt-get install -y python-pip --force-yes", shell=True)
 	call("sudo pip install caravel", shell=True)
