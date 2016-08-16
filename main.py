@@ -18,7 +18,7 @@ print("Downloading Ubuntu for the VM...\n")
 p = Popen("vagrant box add ubuntu/trusty32", stdout=PIPE, stdin=PIPE, stderr=STDOUT, shell=True)
 print("\nUbuntu 14.04 LTS (Trusty Tahr) downloading; please wait...\n")
 
-# Prepare 'y' input in binary & enter it to automate installation
+# Prepare '2' input in binary & enter it to automate selection of VirtualBox modules
 stdout = p.communicate(input=b'2')[0]
 print("\nSetting up VirtualBox components...\n")
 print(stdout.decode())
@@ -33,7 +33,7 @@ call("sudo apt-get update -y", shell=True)
 call("sudo apt-get install -y ansible", shell=True)
 
 # init Vagrant with the box we selected & overwrite a minimal Vagrantfile
-call("vagrant init ubuntu/trusty32 --minimal", shell=True)
+call("vagrant init ubuntu/trusty32", shell=True)
 f = open("Vagrantfile", "w")
 f.write("Vagrant.configure(\"2\") do |config|\n")
 f.write("  config.vm.box = \"ubuntu/trusty32\"\n")
