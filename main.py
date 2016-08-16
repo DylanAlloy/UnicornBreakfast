@@ -6,7 +6,7 @@ print("\nHey there! Sit tight, this isn't going to hurt one bit.\n")
 print("Setting up Vagrant environment...\n")
 
 # Create Vagrant folder for our box & related
-call("sudo apt-get install -y vagrant", shell=True)
+call("sudo apt-get install -y vagrant --force-yes", shell=True)
 if not os.path.exists("Vagrant"):
 	os.makedirs("Vagrant")
 	
@@ -24,13 +24,13 @@ print("\nSetting up VirtualBox components...\n")
 print(stdout.decode())
 print("\nSuccessfully selected VirtualBox for setup...\n")
 print("\nInstalling VirtualBox...\n")
-call("sudo apt-get install -y virtualbox", shell=True)
-call("sudo apt-get install -y software-properties-common", shell=True)
+call("sudo apt-get install -y virtualbox --force-yes", shell=True)
+call("sudo apt-get install -y software-properties-common --force-yes", shell=True)
 
 # Install Ansible after loading relevant repos
-call("sudo apt-add-repository -y ppa:ansible/ansible", shell=True)
-call("sudo apt-get update -y", shell=True)
-call("sudo apt-get install -y ansible", shell=True)
+call("sudo apt-add-repository -y ppa:ansible/ansible --force-yes", shell=True)
+call("sudo apt-get update -y --force-yes", shell=True)
+call("sudo apt-get install -y ansible --force-yes", shell=True)
 
 # init Vagrant with the box we selected & overwrite a minimal Vagrantfile
 call("vagrant init ubuntu/trusty32", shell=True)
