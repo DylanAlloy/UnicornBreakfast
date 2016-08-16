@@ -56,6 +56,7 @@ def install:
 	call("sudo cp ../playbook.yml .", shell=True)
 	call("vagrant up", shell=True)
 	call("vagrant ssh", shell=True)
+	
 def caravel:
 	call("sudo easy_install pip", shell=True)
 	call("sudo pip install caravel", shell=True)
