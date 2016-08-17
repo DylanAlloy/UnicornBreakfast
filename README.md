@@ -2,7 +2,7 @@
 
 # Why
 
-So I wanted a way to visualize good data. Caravel is a project by Airbnb that allows for easy connections of databases to visualize data very quickly. Caravel is great but has some quirks(I'll explain more later), but it's open source. 
+So I wanted a way to visualize good data. Caravel is a project by Airbnb that allows for easy connections of databases to visualize data very quickly. Caravel is great but has some quirks(I'll explain more later), and it's open-source. 
 
 I selected a significant dataset that I cleaned up a little bit to better suit the way Caravel picks up labels, etc. for easy organization. Countries, for example, had to be simplified. The bottom line is data is ambiguously labeled by parties and it remains a huge task to find common standards, and good database management. Good data is very valuable.
 
