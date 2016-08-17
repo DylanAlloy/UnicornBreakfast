@@ -13,15 +13,17 @@
     - pip: name=caravel
       failed_when: false
     - copy: src=../zika.db dest=/zika.db force=yes
-    - expect:
-        command: fabmanager create-admin --app caravel
-        responses:
-          (?i)Username [admin]: "admin"
-          (?i)User first name [admin]: "admin"
-          (?i)User last name [user]: "admin"
-          (?i)Email [admin@fab.org]: "admin"
-          (?i)Password: "admin"
-          (?i)Repeat for confirmation: "admin"
-    - shell: caravel db upgrade
-    - shell: caravel init
-    - shell: caravel runserver
+# Caravel has deprecation issues in the current version which prevent stdin and out to work as 'expect'ed. See what I did there?
+#
+#    - expect:
+#        command: fabmanager create-admin --app caravel
+#        responses:
+#          (?i)Username [admin]: "admin"
+#          (?i)User first name [admin]: "admin"
+#          (?i)User last name [user]: "admin"
+#          (?i)Email [admin@fab.org]: "admin"
+#          (?i)Password: "admin"
+#          (?i)Repeat for confirmation: "admin"
+#    - shell: caravel db upgrade
+#    - shell: caravel init
+#    - shell: caravel runserver
