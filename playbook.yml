@@ -12,15 +12,6 @@
     - pip: name=pexpect state=present extra_args="--upgrade"
     - pip: name=caravel
       failed_when: false
-    - expect:
-        command: fabmanager create-admin --app caravel
-        responses:
-          (?i)Username [admin]: "admin"
-          (?i)User first name [admin]: "admin"
-          (?i)User last name [user]: "admin"
-          (?i)Email [admin@fab.org]: "admin"
-          (?i)Password: "admin"
-          (?i)Repeat for confirmation: "admin"
     - copy: src=../zika.db dest=/zika.db force=yes
     - shell: caravel db upgrade
     - shell: caravel init
