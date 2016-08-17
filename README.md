@@ -8,14 +8,13 @@ What I picked out was the Zika epidemic dataset from IBM's Open Zika project. Th
 
 # What
 
-This is a vagrant config that automates the installation of several important things in a deployment:
+This is a Vagrant/Ansible/virtualbox config that automates the installation of the Caravel deployment:
 
   1. Vagrant VM Provisioning of an Ubuntu 14.04 box using Atlas
   
     a. port forward to :1234
 
-  2. VirtualBox 
-  3. Ansible
+  2. Ansible
 
      a. Caravel prerequisites & install
      
