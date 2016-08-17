@@ -5,18 +5,22 @@
     - apt: upgrade=dist
     - apt: update_cache=yes
     - apt: name=build-essential state=present
-    - apt: name=libssl-dev state=present
-    - apt: name=libffi-dev state=present
-    - apt: name=python-dev state=present
-    - apt: name=python-pip state=present
+    - apt: name=libssl-dev state=present force=yes
+    - apt: name=libffi-dev state=present force=yes
+    - apt: name=python-dev state=present force=yes
+    - apt: name=python-pip state=present force=yes
     - copy: src=../zika.db dest=/zika.db force=yes
-    - shell: apt-get install -y python-pip --force-yes
     - shell: pip install caravel
       failed_when: false
     - expect:
         command: fabmanager create-admin --app caravel
         responses:
-          (?i)password: "MySekretPa$$word"
+          (?i)Username [admin] "admin"
+          (?i)User first name [admin] "admin"
+          (?i)User last name [user] "admin"
+          (?i)Email [admin@fab.org] "admin"
+          (?i)Password "admin"
+          (?i)Repeat for confirmation "admin"
     - shell: caravel db upgrade
     - shell: caravel init
     - shell: caravel runserver
