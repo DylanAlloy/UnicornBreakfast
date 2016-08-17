@@ -29,8 +29,6 @@ It will take some time to install everything until it finishes (Ansible will con
 
 `127.0.0.1:1234` or `localhost:1234`. 
 
-Credentials are admin/admin.
-
 # Requirements
 
   This was tested on Ubuntu 14.04 (due to Ansible reqs) after upgrading the system with recent packages.
