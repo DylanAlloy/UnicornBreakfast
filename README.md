@@ -46,7 +46,7 @@ Some steps in that .gif in the event that it doesn't load for you:
 
   This was tested on Ubuntu 14.04 (due to Ansible reqs) after upgrading the system with recent packages:
   
-  <b>at least 4GB of RAM total + at least a 4-core CPU or 2 w/ hyperthreading. We're working with a somewhat large db and you'll want a quick interface. Reduce resources allocated in the main.py's file write at your own discretion.</b>
+  <b>at least 4GB of RAM total + at least a 4-core CPU or 2 w/ hyperthreading. We're working with a somewhat large db and you'll want a quick interface. Reduce resources allocated by the Vagrantfile exported by main.py at your own discretion.</b>
   
 # Details & Afterthought
 
