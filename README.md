@@ -23,14 +23,9 @@ This is a python script that automates the installation of several important thi
 
 # How
 
-  `sudo python main.py`
+  `vagrant up` inside of the directory.
 
-Once the box is up and running and you're ssh'd into it, it's time to create your Caravel user and start it up.
-
-`sudo bash /caravel.sh`
-   - Keep these credentials in mind, you'll need them to log into Caravel.
-
-At which point we can explore our Caravel interface at `localhost:1234` or `127.0.0.1:1234`
+It will take some time to install everything until it finishes; at which point we can explore our Caravel interface at `localhost:1234` or `127.0.0.1:1234`
 
 <center><img src="http://thisiswhereidostuff.com/caravel.gif" width="100%"></center>
 
