@@ -10,6 +10,5 @@
     - apt: name=python-dev state=present
     - apt: name=python-pip state=present
     - copy: src=../zika.db dest=/zika.db force=yes
-    - copy: src=../caravel.py dest=/caravel.py force=yes
     - shell: pip install -y caravel --force-yes
       failed_when: false
