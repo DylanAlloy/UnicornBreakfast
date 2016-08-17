@@ -54,7 +54,7 @@ Some steps in that .gif in the event that it doesn't load for you:
 
 # Requirements
 
-  This was tested on Ubuntu 14.04 (due to Ansible reqs and me going the path of least resistence as I'm familiar with Ubuntu) after upgrading the system with recent packages:
+  This was tested on Ubuntu 14.04 (due to Ansible reqs) after upgrading the system with recent packages:
   
   <b>at least 4GB of RAM total + at least a 4-core CPU or 2 w/ hyperthreading. We're working with a somewhat large db and you'll want a quick interface.</b>
   
