@@ -19,7 +19,7 @@ This is a python script that will automate an entire development environment for
   2. VirtualBox 
   3. Ansible
 
-     a. Caravel prerequisites
+     a. Caravel prerequisites & install
      
      b. Copy dataset
 
