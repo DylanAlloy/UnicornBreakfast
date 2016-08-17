@@ -25,7 +25,7 @@ This is a vagrant config that automates the installation of several important th
 
   `vagrant up --provision` inside of the directory. Use sudo if it says it "fails early on" and you're on Linux.
 
-It will take some time to install everything until it finishes (Ansible will contain the server PID in the last command, it's not frozen); at which point we can explore our Caravel interface at
+It will take some time to install everything until it finishes (Ansible will contain the server PID in the 3rd and last command, it's not frozen); at which point we can explore our Caravel interface at
 
 `127.0.0.1:1234` or `localhost:1234`. 
 
