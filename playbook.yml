@@ -14,3 +14,10 @@
     - shell: apt-get install -y python-pip --force-yes
     - shell: pip install caravel
       failed_when: false
+    - expect:
+        command: fabmanager create-admin --app caravel
+        responses:
+          (?i)password: "MySekretPa$$word"
+    - shell: caravel db upgrade
+    - shell: caravel init
+    - shell: caravel runserver
