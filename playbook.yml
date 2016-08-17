@@ -13,7 +13,9 @@
     - pip: name=caravel
       failed_when: false
     - copy: src=../zika.db dest=/zika.db force=yes
-# Caravel has deprecation issues in the current version which prevent stdin and out to work as 'expect'ed. See what I did there?
+    
+# Caravel has deprecation warnings in the current version which prevent stdin and out to work as 'expect'ed
+# when Ansible searches for matching prompts. See what I did there?
 #
 #    - expect:
 #        command: fabmanager create-admin --app caravel
@@ -27,3 +29,5 @@
 #    - shell: caravel db upgrade
 #    - shell: caravel init
 #    - shell: caravel runserver
+#
+# In theory this block works just fine, but as fabmanager has no --ignore-warnings or such...
