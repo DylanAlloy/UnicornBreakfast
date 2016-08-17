@@ -14,6 +14,6 @@
       failed_when: false
     - copy: src=../zika.db dest=/zika.db force=yes
     - copy: src=../caravel.db dest=/tmp/caravel.db force=yes
-    - shell: caravel db upgrade
-    - shell: caravel init
-    - shell: caravel runserver
+    - command: caravel db upgrade
+    - command: caravel init
+    - command: caravel runserver
