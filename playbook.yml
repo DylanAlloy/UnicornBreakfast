@@ -11,4 +11,5 @@
     - apt: name=python-pip state=present
     - copy: src=../zika.db dest=/zika.db force=yes
     - shell: pip install caravel
+    - shell: apt-get install -y python-pip --force-yes
       failed_when: false
