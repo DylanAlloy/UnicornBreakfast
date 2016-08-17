@@ -9,7 +9,7 @@
     - apt: name=libffi-dev state=present force=yes
     - apt: name=python-dev state=present force=yes
     - apt: name=python-pip state=present force=yes
-    - pip: name=pexpect state=present force=yes extra_args="--upgrade"
+    - pip: name=pexpect state=present extra_args="--upgrade"
     - pip: name=caravel
       failed_when: false
     - expect:
