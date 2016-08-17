@@ -29,12 +29,12 @@ This is a python script that will automate an entire development environment for
 
 Once the box is up and running and you're ssh'd into it, it's time to create your Caravel user and start it up.
 
-`fabmanager create-admin --app caravel`
+`sudo fabmanager create-admin --app caravel`
    - Keep these credentials in mind, you'll need them to log into Caravel.
 
-`caravel db upgrade`
+`sudo caravel db upgrade`
 
-`caravel init`
+`sudo caravel init`
 
 `sudo caravel runserver`
 
