@@ -31,9 +31,7 @@ This is a python script that will automate an entire development environment for
 
   `sudo python main.py`
 
-Once the box is up and running and you're ssh'd into it, it's time to install Caravel. This wouldn't be handled by Ansible (maybe someone can find a way?) due to the pip implementation stalling out. Other people have reported the issue but there was a generic reponse from the Ansible team (though they have an overwhelming amount of requests).
-
-`sudo pip install caravel`
+Once the box is up and running and you're ssh'd into it, it's time to create your Caravel user and start it up.
 
 `fabmanager create-admin --app caravel`
    - Keep these credentials in mind, you'll need them to log into Caravel.
