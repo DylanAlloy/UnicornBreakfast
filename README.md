@@ -42,8 +42,6 @@ At which point we can explore our Caravel interface at `localhost:1234` or `127.
 
 <center><img src="http://thisiswhereidostuff.com/caravel.gif" width="100%"></center>
 
-This GIF is very important as it includes details that are <i>not</i> in the Caravel docs and that I couldn't find an easy way to automate.
-
 You'll notice in the gif I type into the SQLAlchemyURI "sqlite:////zikanew.db" and this is because I had been trying a couple versions. You'll want to stick with "sqlite:////zika.db" because I finalized my naming conventions before finishing up. Other than that, you want to follow it precisely.
 
 Some steps in that .gif in the event that it doesn't load for you:
