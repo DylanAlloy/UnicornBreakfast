@@ -24,10 +24,6 @@ This is a python script that will automate an entire development environment for
      b. Copy dataset
 
 # How
-  
-  (Download+unzip) or clone this repository.
-
-  `cd UnicornBreakfast-master`
 
   `sudo python main.py`
 
