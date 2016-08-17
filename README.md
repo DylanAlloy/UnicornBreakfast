@@ -29,16 +29,6 @@ This is a vagrant config that automates the installation of several important th
 
 It will take some time to install everything until it finishes; at which point we can explore our Caravel interface at `localhost:1234` or `127.0.0.1:1234`.
 
-<center><img src="http://thisiswhereidostuff.com/caravel.gif" width="100%"></center>
-
-Some steps in that .gif in the event that it doesn't load for you:
-
-  1. From Carvel start, go to "Sources -> Databases" and add the URI "sqlite:////zika.db". Name the DB anything you want.
-  2. Test it by clicking "Test Connection" on the same page. You should get conf and a small box on the bottom with the name of the table.
-  3. Go from "Sources -> Databases" to "Sources -> Tables" and add a table with the name "zika" (MANDATORY and not in the Caravel docs, the table name shouldn't even be a user option!) and select our database's name from the drop down.
-  4. Go to your "Tables" page again and click on the edit button in the row and select the tab up top "List Table Column", select "temporal" for the "report_date" column and select everything remaining for the columns left or if you know specifically how you're going to interpret the data beforehand, select only what you need. 
-  5. Go back to "Tables", click on the name ("zika") of the table you've entitled Caravel to and begin looking at data in new ways!
-
 # Requirements
 
   This was tested on Ubuntu 14.04 (due to Ansible reqs) after upgrading the system with recent packages.
