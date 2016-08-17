@@ -25,7 +25,7 @@ This is a vagrant config that automates the installation of several important th
 
   `vagrant up --provision` inside of the directory. Use sudo if it says it "fails early on" and you're on Linux.
   
-  Then tell it: `sudo bash /caravel.sh` when you're in.
+  Then tell it: `sudo bash /caravel.sh` when you're in. Info on why you have to do this is in playbook.yml but essentially there is a messy deprecation warning getting in the way of Ansible properly reading from the TTY.
 
 It will take some time to install everything until it finishes; at which point we can explore our Caravel interface at `localhost:1234` or `127.0.0.1:1234`.
 
