@@ -38,22 +38,6 @@ call("sudo apt-add-repository -y ppa:ansible/ansible", shell=True)
 call("sudo apt-get update -y --force-yes", shell=True)
 call("sudo apt-get install -y ansible --force-yes", shell=True)
 
-# init Vagrant with the box we selected & overwrite a minimal Vagrantfile
-call("vagrant init ubuntu/trusty32 --minimal", shell=True)
-f = open("Vagrantfile", "w")
-f.write("Vagrant.configure(\"2\") do |config|\n")
-f.write("  config.vm.box = \"ubuntu/trusty32\"\n")
-f.write("   config.vm.network \"forwarded_port\", guest: 8088, host: 1234\n")
-f.write("  config.vm.provision \"ansible\" do |ansible|\n")
-f.write("    ansible.playbook = \"playbook.yml\"\n")
-f.write("   end\n")
-f.write("  config.vm.provider \"virtualbox\" do |vb|\n")
-f.write("    vb.memory = 2048\n")
-f.write("    vb.cpus = 2\n")
-f.write("   end\n")
-f.write("end")
-f.close()
-
 # Copy Ansible playbook to the working directory and "vagrant up"
 call("sudo cp ../playbook.yml .", shell=True)
 call("vagrant up", shell=True)
