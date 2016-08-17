@@ -3,6 +3,9 @@ import os
 from subprocess import Popen, PIPE, STDOUT, call
 
 print("\nHey there! Sit tight, this isn't going to hurt one bit.\n")
+
+call("sudo apt-get update", shell=True)
+call("sudo apt-get upgrade --force-yes", shell=True)
 print("Setting up Vagrant environment...\n")
 	
 # Install & create Vagrant folder for our box & related
