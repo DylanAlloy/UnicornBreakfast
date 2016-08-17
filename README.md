@@ -25,7 +25,7 @@ This is a python script that automates the installation of several important thi
 
   `vagrant up` inside of the directory.
 
-It will take some time to install everything until it finishes; at which point we can explore our Caravel interface at `localhost:1234` or `127.0.0.1:1234`
+It will take some time to install everything until it finishes; at which point we can explore our Caravel interface at `localhost:1234` or `127.0.0.1:1234`. Login with admin/admin.
 
 <center><img src="http://thisiswhereidostuff.com/caravel.gif" width="100%"></center>
 
