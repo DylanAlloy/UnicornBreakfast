@@ -27,7 +27,7 @@ This is a vagrant config that automates the installation of several important th
 
 It will take some time to install everything until it finishes; at which point we can explore our Caravel interface at
 
-`http://127.0.0.1:1234/caravel/explore/table/1/` or `http://localhost:1234/caravel/explore/table/1/`.
+`127.0.0.1:1234` or `localhost:1234`. Credentials are admin/admin.
 
 # Requirements
 
