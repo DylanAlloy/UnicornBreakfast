@@ -28,7 +28,7 @@ This is a Vagrant/Ansible/virtualbox config that automates the installation of t
 
 It will take some time to install everything until it finishes; at which point we can explore our Caravel interface at
 
-`127.0.0.1:1234` or `localhost:1234`. 
+`127.0.0.1:1234` or `localhost:1234`. Username/Pass = admin/admin
 
 # Requirements
 
