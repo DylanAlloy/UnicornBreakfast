@@ -24,8 +24,10 @@ This is a vagrant config that automates the installation of several important th
 # How
 
   `vagrant up --provision` inside of the directory. Use sudo if it says it "fails early on" and you're on Linux.
+  
+  Then tell it: `sudo bash /caravel.sh` when you're in.
 
-It will take some time to install everything until it finishes; at which point we can explore our Caravel interface at `localhost:1234` or `127.0.0.1:1234`. Login with admin/admin.
+It will take some time to install everything until it finishes; at which point we can explore our Caravel interface at `localhost:1234` or `127.0.0.1:1234`.
 
 <center><img src="http://thisiswhereidostuff.com/caravel.gif" width="100%"></center>
 
