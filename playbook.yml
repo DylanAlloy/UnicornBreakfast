@@ -9,8 +9,8 @@
     - apt: name=libffi-dev state=present force=yes
     - apt: name=python-dev state=present force=yes
     - apt: name=python-pip state=present force=yes
-    - copy: src=../zika.db dest=/zika.db force=yes
-    - shell: pip install caravel
+    - pip: name=pexpect state=present force=yes
+    - pip: name=caravel
       failed_when: false
     - expect:
         command: fabmanager create-admin --app caravel
@@ -21,6 +21,7 @@
           (?i)Email [admin@fab.org] "admin"
           (?i)Password "admin"
           (?i)Repeat for confirmation "admin"
+    - copy: src=../zika.db dest=/zika.db force=yes
     - shell: caravel db upgrade
     - shell: caravel init
     - shell: caravel runserver
