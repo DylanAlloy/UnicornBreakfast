@@ -8,7 +8,7 @@ What I picked out was the Zika epidemic dataset from IBM's Open Zika project. Th
 
 # What
 
-This is a python script that automates the installation of several important things in a deployment:
+This is a vagrant config that automates the installation of several important things in a deployment:
 
   1. Vagrant VM Provisioning of an Ubuntu 14.04 box using Atlas
   
