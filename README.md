@@ -36,7 +36,7 @@ It will take some time to install everything until it finishes; at which point w
   
   You will need Vagrant 1.8.5+, Ansible 2+, and virtualbox.
   
-  <b>at least 4GB of RAM total + at least a 4-core CPU or 2 w/ hyperthreading. We're working with a somewhat large db and you'll want a quick interface. Reduce resources allocated by the Vagrantfile exported by main.py at your own discretion.</b>
+  <b>at least 4GB of RAM total + at least a 4-core CPU or 2 w/ hyperthreading. We're working with a somewhat large db and you'll want a quick interface. Reduce resources allocated by the Vagrantfile at your own discretion.</b>
   
 # Details & Afterthought
 
