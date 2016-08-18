@@ -30,8 +30,6 @@ It will take some time to install everything until it finishes; at which point w
 
 `127.0.0.1:1234` or `localhost:1234`. Username/Pass = admin/admin
 
-Check out the slices included at `http://localhost:1234/caravel/dashboard/1`
-
 # Requirements
 
   This was tested on Ubuntu 14.04 (due to Ansible reqs) after upgrading the system with recent packages.
